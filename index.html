@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ellece - Tienda de Bolsos y Accesorios</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.jpg">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <div class="logo">
+                <img src="logo.jpg" alt="Logotipo de Ellece">
+            </div>
+        </a>
+        
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="promociones.html">Promociones</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="banner">
+        <div class="banner-content">
+            <img src="logo.jpg" alt="Logotipo de Ellece">
+            <div class="text-content">
+                <h2>Descubre Nuestra Colección de Bolsos y Accesorios</h2>
+                <p>Explora nuestras tres líneas de productos:</p>
+                <ul>
+                    <li><strong>Línea 1:</strong> Bolsos, Carteras, Mochilas, Loncheras, Cosmetiqueras y Accesorios Afines.</li>
+                    <li><strong>Línea 2:</strong> Proyectos en Tela para el Hogar.</li>
+                    <li><strong>Línea 3:</strong> Osos Memoriales.</li>
+                </ul>
+                <a href="catalogo.html" class="cta-button">Ver Catálogo</a>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="catalogo" class="productos">
+        <!-- Aquí puedes agregar imágenes y detalles de tus productos -->
+    </section>
+    
+    <section class="novedades">
+        <h2>Novedades y Promociones</h2>
+        <div class="novedad">
+            <img src="novedad1.png" alt="Novedad 1">
+            <h3>Promoción Especial de Verano</h3>
+            <p>Aprovecha nuestros descuentos de verano en bolsos y accesorios.</p>
+            <button class="cta-button toggle-description">Ver más</button>
+            <div class="descripcion">
+                <p>¡Hermoso Bolso Negro!</p>
+                <p>Este elegante bolso negro es el accesorio perfecto para cualquier ocasión. Su diseño atemporal y su alta calidad lo convierten en una pieza esencial en tu guardarropa.</p>
+            </div>
+        </div>
+        <div class="novedad">
+            <img src="novedad2.png" alt="Novedad 2">
+            <h3>Nuevas Colecciones de Otoño</h3>
+            <p>Descubre nuestras últimas colecciones de bolsos para la temporada de otoño.</p>
+            <button class="cta-button toggle-description">Ver más</button>
+            <div class="descripcion">
+                <p>Bello Bolso con detalles y carterita de mano.</p>
+                <p>Nuestra nueva colección de otoño presenta hermosos bolsos con detalles únicos y una carterita de mano a juego. Estos accesorios resaltarán tu estilo durante toda la temporada.</p>
+            </div>
+        </div>
+        
+    </section>
+    
+    <footer>
+        <div class="footer-content">
+            <a href="index.html">
+                <div class="footer-logo">
+                    <img src="logo.jpg" alt="Logotipo de Ellece en el footer">
+                </div>
+            </a>
+            
+            <div class="footer-info">
+                <p>&copy; 2023 Ellece</p>
+                <p>Dirección: Villa Sol, Managua</p>
+                <p>Teléfono: 8399 4046</p>
+                <p>Correo: ventas@ellece.com</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+<script>
+    // Obtener todos los elementos "novedad"
+    const novedades = document.querySelectorAll('.novedad');
+
+    // Agregar un evento de clic a cada botón "Ver más"
+    novedades.forEach(novedad => {
+        const toggleButton = novedad.querySelector('.toggle-description');
+        const descripcion = novedad.querySelector('.descripcion');
+
+        toggleButton.addEventListener('click', () => {
+            descripcion.classList.toggle('visible');
+            if (descripcion.classList.contains('visible')) {
+                toggleButton.textContent = 'Ocultar';
+            } else {
+                toggleButton.textContent = 'Ver más';
+            }
+        });
+    });
+</script>
+
+</html>

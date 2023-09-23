@@ -1,0 +1,252 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Fondo blanco */
+    color: #000; /* Texto negro */
+}
+
+header {
+    background-color: #fff; /* Fondo blanco */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    display: flex;
+    justify-content: space-between; /* Alineación horizontal */
+    align-items: center; /* Alineación vertical */
+}
+
+.logo img {
+    max-width: 100px; /* Ancho máximo del logotipo */
+}
+
+header h1 {
+    color: #000; /* Texto negro */
+    font-size: 36px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000; /* Texto negro */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #333; /* Texto gris oscuro al pasar el mouse */
+}
+
+/* Estilos para la sección de banner */
+section.banner {
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    padding: 100px 0;
+    display: flex;
+    align-items: center; /* Alineación vertical al centro */
+}
+
+.banner-content {
+    display: flex;
+    align-items: center; /* Alineación vertical al centro */
+    justify-content: space-between; /* Espacio entre la imagen y el texto */
+    width: 100%;
+    max-width: 1200px; /* Ancho máximo para el contenido */
+    margin: 0 auto; /* Centrar contenido horizontalmente */
+}
+
+.banner-content img {
+    max-width: 200px; /* Ancho máximo de la imagen */
+    margin-right: 30px; /* Espacio entre la imagen y el texto */
+    border-radius: 12px;
+}
+
+.text-content {
+    flex-grow: 1; /* El texto ocupa el espacio restante */
+}
+
+section.banner h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+section.banner p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+section.banner ul {
+    list-style: none;
+    padding: 0;
+}
+
+section.banner li {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #333; /* Color gris oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px; /* Botón redondeado */
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #555; /* Color gris más oscuro al pasar el mouse */
+}
+
+/* Estilos para la sección de productos (catálogo) */
+section.productos {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.producto {
+    background-color: #fff; /* Fondo blanco */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+}
+
+.producto h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.producto p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Estilos para la sección de Novedades y Promociones */
+section.novedades {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff; /* Fondo blanco */
+    color: #000; /* Texto negro */
+}
+
+section.novedades h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para la sección de novedades */
+.novedad {
+    background-color: #fff; /* Fondo blanco */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative; /* Posición relativa para elementos hijos */
+}
+
+.novedad img {
+    max-width: 100%;
+    height: auto;
+}
+
+.novedad h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.novedad p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Estilos para la descripción oculta */
+.descripcion {
+    display: none; /* Inicialmente oculta */
+    margin-top: 20px;
+}
+
+.descripcion.visible {
+    display: block; /* Mostrar cuando la clase "visible" está presente */
+    color: #000; /* Texto negro */
+    font-size: 16px;
+}
+
+/* Estilos para el botón "Ver más" y "Ocultar" */
+.toggle-description {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #333; /* Color gris oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px; /* Botón redondeado */
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-description:hover {
+    background-color: #555; /* Color rosa más brillante al pasar el mouse */
+}
+
+
+
+
+
+/* Estilos para el footer */
+footer {
+    background-color: #333; /* Color de fondo gris oscuro */
+    color: #fff; /* Texto blanco */
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo img {
+    max-width: 100px;
+    margin-left: 10px;
+    border-radius: 12px;
+}
+
+.footer-info {
+    text-align: left;
+}
+
+.footer-info p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.footer-info p:first-child {
+    font-weight: bold;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Ellece</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.jpg">
+    <style>
+        /* Estilos específicos para el catálogo */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff; /* Fondo blanco */
+            color: #000; /* Texto negro */
+        }
+
+        header {
+            background-color: #fff; /* Fondo blanco */
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            display: flex;
+            justify-content: space-between; /* Alineación horizontal */
+            align-items: center; /* Alineación vertical */
+        }
+
+        header h1 {
+            color: #000; /* Texto negro */
+            font-size: 36px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #000; /* Texto negro */
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #333; /* Texto gris oscuro al pasar el mouse */
+        }
+
+        /* Estilos para la sección de productos (catálogo) */
+        section.catalogo {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .producto {
+            background-color: #fff; /* Fondo blanco */
+            margin: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        .producto img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .producto h3 {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .producto p {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        /* Estilos para el pie de página */
+        footer {
+            background-color: #333; /* Color gris oscuro */
+            color: #fff; /* Texto blanco */
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <div class="logo">
+                <img src="logo.jpg" alt="Logotipo de Ellece">
+            </div>
+        </a>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="promociones.html">Promociones</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="catalogo">
+        <div class="producto">
+            <img src="producto1.png" alt="Mochila negra">
+            <h3>Mochila negra</h3>
+            <p>Esta elegante mochila negra es perfecta para llevar tus pertenencias con estilo. Cuenta con múltiples compartimentos y un diseño moderno que combina con cualquier atuendo. Ideal para uso diario o viajes.</p>
+            <p>Precio: C$720.00</p>
+            <a href="#" class="cta-button">Comprar</a>
+        </div>
+    
+        <div class="producto">
+            <img src="producto2.png" alt="Almohada de Embarazo para Dormir, Almohada de Maternidad en Forma de U">
+            <h3>Almohada de Embarazo para Dormir, Almohada de Maternidad en Forma de U</h3>
+            <p>La almohada de maternidad en forma de U es la compañera perfecta para mamás embarazadas. Brinda soporte completo al cuerpo, aliviando la presión en la espalda, caderas y abdomen. Proporciona un sueño cómodo durante el embarazo.</p>
+            <p>Precio: C$1600.00</p>
+            <a href="#" class="cta-button">Comprar</a>
+        </div>
+    
+        <!-- Agrega más productos y descripciones según sea necesario -->
+    
+    </section>
+    
+    
+        <!-- Agrega más productos según sea necesario -->
+    
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Ellece</p>
+    </footer>
+</body>
+</html>

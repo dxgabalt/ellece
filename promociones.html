@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promociones - Ellece</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.jpg">
+    <style>
+        /* Estilos específicos para las promociones */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff; /* Fondo blanco */
+            color: #000; /* Texto negro */
+        }
+
+        header {
+            background-color: #fff; /* Fondo blanco */
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            display: flex;
+            justify-content: space-between; /* Alineación horizontal */
+            align-items: center; /* Alineación vertical */
+        }
+
+        header h1 {
+            color: #000; /* Texto negro */
+            font-size: 36px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #000; /* Texto negro */
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #333; /* Texto gris oscuro al pasar el mouse */
+        }
+
+        /* Estilos para la sección de promociones */
+        section.promociones {
+            padding: 20px;
+            text-align: center;
+        }
+
+        section.promociones h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .promocion {
+            background-color: #fff; /* Fondo blanco */
+            margin: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .promocion img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .promocion h3 {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .promocion p {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        /* Estilos para el pie de página */
+        footer {
+            background-color: #333; /* Color gris oscuro */
+            color: #fff; /* Texto blanco */
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <div class="logo">
+                <img src="logo.jpg" alt="Logotipo de Ellece">
+            </div>
+        </a>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="#promociones">Promociones</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="promociones">
+        <h2>¡Promociones Especiales!</h2>
+    
+        <div class="promocion">
+            <img src="novedad2.png" alt="Promoción 1">
+            <h3>Promoción de Verano</h3>
+            <p>Aprovecha nuestras ofertas de verano en bolsos y accesorios. ¡Descuentos de hasta un 30%!</p>
+            <p>Válido hasta: 30 de Septiembre de 2023</p>
+            <a href="#" class="cta-button">Ver detalles</a>
+        </div>
+    
+        <div class="promocion">
+            <img src="promocion2.png" alt="Promoción 2">
+            <h3>Promoción de Invierno</h3>
+            <p>¡No te pierdas nuestras ofertas de invierno! Compra un Oso Memorial y obtén un 20% de descuento en un segundo artículo.</p>
+            <p>Válido hasta: 15 de diciembre de 2023</p>
+            <a href="#" class="cta-button">Ver detalles</a>
+        </div>
+    
+        <!-- Agrega más promociones según sea necesario -->
+    
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2023 Ellece</p>
+    </footer>
+</body>
+</html>
